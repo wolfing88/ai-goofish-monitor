@@ -5,6 +5,9 @@ on:
   pull_request:
     types: [closed] # 当PR被关闭时触发
     branches: [ "master" ] # 目标分支是 master
+  workflow_dispatch:
+  push:
+    branches: [ "master" ]
 
 jobs:
   build-and-push:
